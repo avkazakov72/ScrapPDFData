@@ -5,6 +5,7 @@ from datetime import datetime
 
 def parse_bank_statement(pdf_path):
     # Регулярные выражения
+    # !!!
     operation_header = re.compile(
         r'^(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+(\d{6})\s+(.*?)\s+([+-]?\s*[\d\s]+,\d{2})\s+([\d\s]+,\d{2})$'
     )
